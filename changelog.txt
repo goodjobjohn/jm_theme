@@ -1,3 +1,7 @@
+01/02/19
+:: css
+[changed] decrease font size on mobile from $font__size-sm to $font__size-xs
+
 09/12/18
 :: css
 [added] styles for .article-footer

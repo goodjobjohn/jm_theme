@@ -168,7 +168,11 @@
 
 		p {
 			word-wrap: break-word;
-			font-size: $font__size-sm;
+			font-size: $font__size-xs;
+
+			@include media(mobile) {
+				font-size: $font__size-sm;
+			}
 		}
 
 		.more-link {
