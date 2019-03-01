@@ -1,0 +1,34 @@
+09/12/18
+:: css
+[added] styles for .article-footer
+[added] padding to .feature-title
+[fixed] added top-margin to .page-header to fix 404, archives etc 
+[fixed] added min-height to #recent-posts to fix jump on button click
+
+08/12/18
+:: header.php
+[removed] google analytics - not needed if gtm is installed
+:: entry-header.php
+[changed] title tag on article publisher category 
+[changed] author description to inline description
+:: template-tags.php
+[changed] entry footer strip tags link to archives
+:: single.php
+[removed] unused footer content
+[added] article footer navigation 
+
+
+06/12/18
+[removed] the need for header-home.php 
+[added] google tag manager script to header.php
+
+14/11/18
+[added] css to h3
+
+# Index
+[added] for new features.
+[changed] for changes in existing functionality.
+[deprecated] for soon-to-be removed features.
+[removed] for now removed features.
+[fixed] for any bug fixes.
+[security] in case of vulnerabilities.

@@ -1,0 +1,90 @@
+.home-page {
+
+    article {
+        max-width: 90%;
+        margin: 1em auto; 
+
+        @include media(tablet) {
+            max-width: 80%;
+        }
+    }
+    .home-content {
+        @include media(tablet) {
+            margin-top: 5em;
+        }
+    }
+    // FORM STYLE
+    .name-email {
+        display: flex;
+    }
+    label {
+        font-size: .7em;
+        
+        &.name {
+            input {
+                width: 95%;
+            }
+        }
+        &.email {
+            input { 
+                width: 100%; 
+            }
+        }
+        input { 
+            font-size: 1.5em;
+            width: 100%;
+        }
+        textarea {
+            height: 10em;
+        }
+    }
+
+    .grid {
+
+        @include media(tablet) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: 100%;
+            align-items: center;
+        }
+
+        .welcome-content {
+            background-color: #f4efe9f0;
+            font-size: .7em;               
+            padding: 20px;
+            
+            @include media(tablet) {
+                padding: 60px;
+                background-color: #f4efe9f0;
+                font-size: .7em;   
+                border: 1px solid $color__border;
+            }
+        }
+    }
+    
+    .welcome-image {
+        
+
+        img {
+            position: fixed;
+            width:100%;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            @include media(tablet) {
+               
+            }
+        }
+
+
+        .post-thumbnail {
+            margin: 0 !important;
+            
+            &:before, &:after {
+                background: none;
+            }
+            
+        }
+    }
+    
+}

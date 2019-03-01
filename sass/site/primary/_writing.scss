@@ -1,0 +1,140 @@
+.page-id-345 {
+    @include media(tablet) {
+        .site-header {
+            position: fixed;
+            width: 100%;
+            z-index: 999;
+        }
+    }
+}
+.edit-link {display: none !important;}
+.page-writing {
+
+    margin: calc(3 * #{ $size__spacing-unit}) $size__spacing-unit $size__spacing-unit;
+    position: relative;
+
+    @include media(tablet) {
+        max-width: 80%;
+        margin: 0 10%;
+    }
+    header {
+        position: relative;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .entry {
+        margin-top: 0;
+        
+        
+    }
+    .entry-meta {
+        margin:0 0 2em 0;
+        font-size: .5em;
+    }
+    #featured {
+        
+        @include media(tablet) {
+			position: fixed;
+            top: 130px;
+            width:33%;
+            
+        }
+        article {
+            border: 1px solid $color__highlight;
+            margin-bottom: 20px;
+        }
+        .svg-icon {
+            position: relative;
+            top: -1px;
+        }
+        .featured-img {
+            width: 100%;
+            height: 150px;
+            overflow: hidden;
+            z-index: -1;
+            position: absolute;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: .2;
+            transition: .2s opacity linear;
+            filter:grayscale(100%);
+            
+            img {
+                width: 100%;
+                                
+            }
+        }
+        .feature-title {
+            &:hover .featured-img {
+                opacity: 1;
+            }
+            text-align: center;
+           
+        }
+    }
+    .sticky-post {
+        position: absolute;
+        top: 9px;
+        font-size: 0.5111111111em;
+        font-weight: 600;
+        left: -6px;
+    }
+    a {
+        &:hover,
+            &:active {
+                text-decoration-color: $color__link;
+            }
+
+        h3 {
+            margin: 0;
+            color: $color__text-main;            
+        }
+        h5 { 
+            margin-bottom: 0 ;  
+            color: $color__text-main;           
+        }
+    }
+    
+}
+
+#recent-posts {
+    text-align: left;
+    padding: 3rem 0;
+    min-height: 100vh;
+    
+    @include media(tablet) {
+        text-align: right;
+        margin-left: 50%;
+        padding: 130px 0;
+    }
+
+    .svg-icon {
+        position: relative;
+        top: 4px;
+    }
+    
+    .container {
+        overflow: hidden;
+    }
+    
+    .filterDiv {
+        display: none; /* Hidden by default */
+    }
+    
+    /* The "show" class is added to the filtered elements */
+    .show {
+        display: block;
+    }
+
+    button {
+        font-size: 0.488889em;
+        padding: 0.36rem 1rem;
+    }
+    .posted-on {
+        color: #767676;
+    }
+
+}

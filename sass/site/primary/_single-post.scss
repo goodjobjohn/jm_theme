@@ -1,0 +1,56 @@
+.single-post {
+
+    .post-thumbnail {
+        img {
+
+            @include media(tablet) {
+                position: fixed;
+                top: 0; 
+                left: 0;
+                z-index: -1;
+                width:100%;
+            }
+        }
+    }   
+    .content-area {
+       
+        margin: 0 auto;
+        background-color: #f4efe9f0;
+        
+        @include media(tablet) {
+            max-width: 70%;
+            margin: 50vh auto 0 auto;
+            border: 1px solid $color__border;
+        }
+
+        .publisher {
+            position: absolute;
+            top: -14px;
+            left: 0px;
+            color: #e4a911;
+            text-transform: uppercase;
+            letter-spacing: 0.25em;
+            border: 1px solid#e4a911;
+            padding: 3px 9px;
+            background-color: #f4efe9;
+        }
+    }
+}
+
+.to-top {
+    position: fixed;
+    bottom: 4px;
+    right: 4px;
+    font-family: $font__heading; 
+    font-size: .5em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.article-footer {
+	margin: 1em;
+	font-size: .5em;
+	text-align: center;
+    color: $color__text-light;
+    font-weight: 600;
+}

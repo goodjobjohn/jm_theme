@@ -1,0 +1,1 @@
+jQuery,wp.customize.bind("ready",function(){wp.customize("colorscheme",function(c){wp.customize.control("colorscheme_primary_hue",function(o){var n=function(){"custom"===c.get()?o.container.slideDown(180):o.container.slideUp(180)};n(),c.bind(n)})})});
