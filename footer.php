@@ -20,7 +20,7 @@
 		<div class="site-info">
 			<?php $blog_info = get_bloginfo( 'name' ); ?>
 			<?php if ( ! empty( $blog_info ) ) : ?>
-				<small><a class="site-name" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?> 2018</a>| <a href="https://john.basham.com.au">Made by John</a></small>
+				<small><a class="site-name" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?> 2020</a>| <a href="https://goodjobjohn.com" title="This website was designed and built by 'Good job, John.'">Good job, John.</a></small>
 			<?php endif; ?>
 			
 			<?php
